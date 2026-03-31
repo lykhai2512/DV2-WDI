@@ -1,0 +1,21 @@
+Country Name,Country Code,Series Name,Series Code,2012 [YR2012],2014 [YR2014],2016 [YR2016],2018 [YR2018],2020 [YR2020],2022 [YR2022]
+Viet Nam,VNM,Multidimensional poverty headcount ratio (World Bank) (% of population),SI.POV.MPWB,5.3,4.5,3.5,2.9,1.8,1.9
+Viet Nam,VNM,Poverty gap at $3.00 a day (2021 PPP) (%),SI.POV.GAPS,0.7,0.7,0.5,0.5,0.3,0.4
+Viet Nam,VNM,Poverty gap at $4.20 a day (2021 PPP) (%),SI.POV.LMIC.GP,2.3,2.2,1.5,1.4,0.9,1.1
+Viet Nam,VNM,Poverty gap at $8.30 a day (2021 PPP) (%),SI.POV.UMIC.GP,14.2,12,9.1,7.6,6,6.5
+Viet Nam,VNM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,3.7,3.4,2.5,2.2,1.3,1.6
+Viet Nam,VNM,Poverty headcount ratio at $4.20 a day (2021 PPP) (% of population),SI.POV.LMIC,9.9,8.6,6.2,5.2,3.7,4.2
+Viet Nam,VNM,Poverty headcount ratio at $8.30 a day (2021 PPP) (% of population),SI.POV.UMIC,43.2,37.9,29.8,24.2,20.4,21.5
+Viet Nam,VNM,Gini index,SI.POV.GINI,35.6,34.8,35.3,35.7,36.8,36.1
+Viet Nam,VNM,Income share held by fourth 20%,SI.DST.04TH.20,22.2,22.4,22.4,22.3,22.1,22
+Viet Nam,VNM,Income share held by highest 10%,SI.DST.10TH.10,27.7,26.8,27.1,27.5,28.5,28.1
+Viet Nam,VNM,Income share held by highest 20%,SI.DST.05TH.20,43,42.2,42.5,42.9,43.9,43.2
+Viet Nam,VNM,Income share held by lowest 10%,SI.DST.FRST.10,2.8,2.7,2.6,2.5,2.5,2.6
+Viet Nam,VNM,Income share held by lowest 20%,SI.DST.FRST.20,7.1,7.1,6.9,6.7,6.6,6.8
+Viet Nam,VNM,Income share held by second 20%,SI.DST.02ND.20,11.6,12,11.9,11.9,11.5,11.8
+Viet Nam,VNM,Income share held by third 20%,SI.DST.03RD.20,16.1,16.4,16.3,16.3,15.9,16.1
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,

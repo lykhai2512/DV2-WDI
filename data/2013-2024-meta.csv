@@ -1,0 +1,103 @@
+Country Name,Country Code,Series Name,Series Code,2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023],2024 [YR2024]
+Viet Nam,VNM,"Primary education, teachers",SE.PRM.TCHR,381432,386953,392403,396843,397098,396600,390754,377876,384737,381976,379191,380535
+Viet Nam,VNM,"Primary education, pupils",SE.PRM.ENRL,7202767,7434848,7543632,7790009,7801560,8041842,8506562,8718356,8884964,9201399,9192690,8876319.52864096
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Aggregation method,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.PRM.TCHR,CC BY-4.0,"Primary education, teachers","Primary education, teachers refers to the total number of teachers at primary level, including full-time and part-time teachers.","Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,Number,Annual,1970-2024,Sum,"Methodology: Teachers refer to persons employed full-time or part-time in an official capacity to guide and direct the learning experience of pupils and students, irrespective of their qualifications or the delivery mechanism, i.e. face-to-face and/or at a distance. This definition excludes educational personnel who have no active teaching duties (e.g. headmasters, headmistresses or principals who do not teach) or who work occasionally or in a voluntary capacity in educational institutions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): The metric of personnel count primarily engaged in teaching and/or research reflects the scale, diversity, and distribution of educational staff within a nation's academic institutions. An increased count is anticipated to enrich the educational setting by means of dedicated teaching, practical research, academic pursuits, and contributions to the service of national educational policies.","Teachers are pivotal in molding the future and unleashing the potential of each student. The United Nations Educational, Scientific and Cultural Organization (UNESCO) highlights a global teacher shortage as a significant obstacle in realizing Sustainable Development Goal 4, which aims for inclusive and equitable quality education.","The precision of this indicator can be influenced by the enumeration method used, such as headcount or 'full-time equivalent' count of teachers.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRM.ENRL,CC BY-4.0,"Primary education, pupils",Primary education pupils is the total number of pupils enrolled at primary level in public and private schools.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,Number,Annual,1970-2024,Sum,"Methodology: Enrollment includes Individuals officially registered in a given educational programme, or stage or module thereof, regardless of age.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): Educational programs at the International Standard Classification of Education (ISCED) level 1, commonly referred to as primary education, are fundamentally structured to equip students with essential literacy and numeracy skills. These programs aim to lay a robust groundwork for learning, fostering an understanding of key knowledge domains, and promoting personal and social growth, thereby readying students for the subsequent stage of lower secondary education.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Entry into this level is predominantly based on age, with the typical or legally mandated age of enrollment ranging from 5 to 7 years old. The duration of primary education is generally six years, though it can vary from four to seven years, concluding when students are between 10 to 12 years old (refer to Paragraphs 132 to 134 for further details). Upon successful completion of primary education, students are eligible to progress to ISCED level 2, which corresponds to lower secondary education.","Primary education is a fundamental human right. It serves as the cornerstone for subsequent achievement and creates opportunities for further progress. Its extensive influence extends to individuals and the collective society, playing a critical role in the alleviation of extreme poverty, the promotion of health, and the advancement of gender equality. The SDG target 4.1 advocates for the completion of free, equitable, and high-quality primary and secondary education for all children, aiming to achieve meaningful and impactful learning outcomes by the year 2030.",,https://datacatalog.worldbank.org/public-licenses#cc-by

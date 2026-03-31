@@ -1,0 +1,76 @@
+Country Name,Country Code,Series Name,Series Code,2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023]
+Viet Nam,VNM,Adolescents out of school (% of lower secondary school age),SE.SEC.UNER.LO.ZS,11.3618468762112,9.9336013963185,6.74931944179349,5.44366131948073,4.299235863565,4.47783717769638,4.62337369138374,7.51958593385591,4.26207264537586,3.04903793570641
+Viet Nam,VNM,"Adolescents out of school, female (% of female lower secondary school age)",SE.SEC.UNER.LO.FE.ZS,11.8326407719192,9.61382579706034,7.39545108580938,6.3274743428587,5.51148071721812,6.17214841484657,6.43000446138424,7.79215879527984,5.75859248524054,4.89848510619477
+Viet Nam,VNM,"Adolescents out of school, male (% of male lower secondary school age)",SE.SEC.UNER.LO.MA.ZS,10.9077170512714,10.2422423338296,6.12649143842633,4.58782671621051,3.11884952153034,2.81833276624231,2.86067909724636,7.25438992849363,2.81229386882299,1.2622018448363
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Aggregation method,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.SEC.UNER.LO.ZS,CC BY-4.0,Adolescents out of school (% of lower secondary school age),Adolescents out of school are the percentage of lower secondary school age adolescents who are not enrolled in school.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of adolescents in lower secondary school age,Annual,1970-2024,Weighted average,"Methodology: The rate of out-of-school adolescents allows to compare across countries with different population sizes. It shows the share of official lower secondary age adolescents who never attended school or dropped out to the population of official lower secondary school age.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator measures the proportion of the population within the official age range for a specific educational level who are not currently enrolled in school. The data aids in identifying these individuals to tailor targeted interventions and formulate effective policies, ensuring that all children have the opportunity to attend school. It encompasses children who have never attended school, those who may enroll at a later age, and those who have started education but did not continue to the expected age of completion for the specified level.","Ensuring access to education is fundamental to social and economic advancement, aligning with the global development agenda. The out-of-school rate serves as a critical metric within the Sustainable Development Goal 4 framework, providing a measure to evaluate progress toward achieving universal education. This rate, alongside the number of out-of-school children and adolescents, highlights the urgency to enhance educational accessibility.","The administrative data used in the calculation of the rate of out-of-school children are based on enrolment at a specific date which can bias the results by either counting enrolled children who never attend school or by omitting those who enroll after the reference date for reporting enrolment data. Furthermore, children who drop out of school after the reference date are not counted as out of school. Discrepancies between enrolment and population data from different sources can also result in over- or underestimates of the rate. Lastly, the international comparability of this indicator can be affected by the use of different concepts of enrolment and out-of-school children across countries.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.UNER.LO.FE.ZS,CC BY-4.0,"Adolescents out of school, female (% of female lower secondary school age)",Adolescents out of school are the percentage of lower secondary school age adolescents who are not enrolled in school.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of female adolescents in lower secondary school age,Annual,1970-2024,Weighted average,"Methodology: The rate of out-of-school adolescents allows to compare across countries with different population sizes. It shows the share of official lower secondary age adolescents who never attended school or dropped out to the population of official lower secondary school age.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator measures the proportion of the population within the official age range for a specific educational level who are not currently enrolled in school. The data aids in identifying these individuals to tailor targeted interventions and formulate effective policies, ensuring that all children have the opportunity to attend school. It encompasses children who have never attended school, those who may enroll at a later age, and those who have started education but did not continue to the expected age of completion for the specified level.","Ensuring access to education is fundamental to social and economic advancement, aligning with the global development agenda. The out-of-school rate serves as a critical metric within the Sustainable Development Goal 4 framework, providing a measure to evaluate progress toward achieving universal education. This rate, alongside the number of out-of-school children and adolescents, highlights the urgency to enhance educational accessibility.","The administrative data used in the calculation of the rate of out-of-school children are based on enrolment at a specific date which can bias the results by either counting enrolled children who never attend school or by omitting those who enroll after the reference date for reporting enrolment data. Furthermore, children who drop out of school after the reference date are not counted as out of school. Discrepancies between enrolment and population data from different sources can also result in over- or underestimates of the rate. Lastly, the international comparability of this indicator can be affected by the use of different concepts of enrolment and out-of-school children across countries.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.UNER.LO.MA.ZS,CC BY-4.0,"Adolescents out of school, male (% of male lower secondary school age)",Adolescents out of school are the percentage of lower secondary school age adolescents who are not enrolled in school.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of male adolescents in lower secondary school age,Annual,1970-2024,Weighted average,"Methodology: The rate of out-of-school adolescents allows to compare across countries with different population sizes. It shows the share of official lower secondary age adolescents who never attended school or dropped out to the population of official lower secondary school age.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator measures the proportion of the population within the official age range for a specific educational level who are not currently enrolled in school. The data aids in identifying these individuals to tailor targeted interventions and formulate effective policies, ensuring that all children have the opportunity to attend school. It encompasses children who have never attended school, those who may enroll at a later age, and those who have started education but did not continue to the expected age of completion for the specified level.","Ensuring access to education is fundamental to social and economic advancement, aligning with the global development agenda. The out-of-school rate serves as a critical metric within the Sustainable Development Goal 4 framework, providing a measure to evaluate progress toward achieving universal education. This rate, alongside the number of out-of-school children and adolescents, highlights the urgency to enhance educational accessibility.","The administrative data used in the calculation of the rate of out-of-school children are based on enrolment at a specific date which can bias the results by either counting enrolled children who never attend school or by omitting those who enroll after the reference date for reporting enrolment data. Furthermore, children who drop out of school after the reference date are not counted as out of school. Discrepancies between enrolment and population data from different sources can also result in over- or underestimates of the rate. Lastly, the international comparability of this indicator can be affected by the use of different concepts of enrolment and out-of-school children across countries.",https://datacatalog.worldbank.org/public-licenses#cc-by

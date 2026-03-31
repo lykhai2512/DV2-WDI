@@ -1,0 +1,85 @@
+Country Name,Country Code,Series Name,Series Code,2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022]
+Viet Nam,VNM,"School enrollment, secondary, female (% gross)",SE.SEC.ENRR.FE,83.8337492903167,86.3064277183873,87.6304773371075,88.6447461101443,89.7093994425268,89.4501554566878,90.3080638471257,90.5445572317873
+Viet Nam,VNM,"School enrollment, secondary, male (% gross)",SE.SEC.ENRR.MA,94.8760643019166,93.8726930986627,94.4078377851191,96.929171698508,99.5151106974771,96.8611404229179,95.1768509933672,96.2090753212709
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Aggregation method,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.SEC.ENRR.FE,CC BY-4.0,"School enrollment, secondary, female (% gross)","Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Secondary education completes the provision of basic education that began at the primary level, and aims at laying the foundations for lifelong learning and human development, by offering more subject- or skill-oriented instruction using more specialized teachers.","Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of female population in the 5-year age group immediately following primary education,Annual,1970-2024,Weighted average,"Methodology: Gross enrollment ratio for secondary school is calculated by dividing the number of students enrolled in secondary education regardless of age by the population of the age group which officially corresponds to secondary education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): Gross enrollment ratios indicate the capacity of each level of the education system, but a high ratio may reflect a substantial number of overage children enrolled in each grade because of repetition or late entry rather than a successful education system.","Secondary education acts as a critical intermediary that not only builds upon the foundational knowledge acquired in primary education but also equips students for various pathways, including immediate entry into the workforce, further education in postsecondary non-tertiary institutions, or advancement to higher education. This indicator assesses the aggregate participation rate in secondary education, reflecting the education system's capacity to enroll students within a designated age group.","Enrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, the length of education differs across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.ENRR.MA,CC BY-4.0,"School enrollment, secondary, male (% gross)","Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Secondary education completes the provision of basic education that began at the primary level, and aims at laying the foundations for lifelong learning and human development, by offering more subject- or skill-oriented instruction using more specialized teachers.","Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of male population in the 5-year age group immediately following primary education,Annual,1970-2024,Weighted average,"Methodology: Gross enrollment ratio for secondary school is calculated by dividing the number of students enrolled in secondary education regardless of age by the population of the age group which officially corresponds to secondary education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): Gross enrollment ratios indicate the capacity of each level of the education system, but a high ratio may reflect a substantial number of overage children enrolled in each grade because of repetition or late entry rather than a successful education system.","Secondary education acts as a critical intermediary that not only builds upon the foundational knowledge acquired in primary education but also equips students for various pathways, including immediate entry into the workforce, further education in postsecondary non-tertiary institutions, or advancement to higher education. This indicator assesses the aggregate participation rate in secondary education, reflecting the education system's capacity to enroll students within a designated age group.","Enrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, the length of education differs across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.",https://datacatalog.worldbank.org/public-licenses#cc-by

@@ -1,0 +1,18 @@
+Country Name,Country Code,Series Name,Series Code,2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023]
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.BA.FE.ZS,9.5,9.64838569702851,9.78291657231152,11.039999961853,10.9496045397398
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.BA.MA.ZS,11.039999961853,11.1145012533394,10.7902558941473,12.039999961853,11.7186994101123
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.BA.ZS,10.25,10.3575068448987,10.2704172552929,11.5200004577637,11.3209825236686
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.DO.ZS,0.0700000002980232,0.0767385233579148,0.0618242343905956,0.0564000089743266,0.0668640898713094
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.DO.MA.ZS,0.109999999403954,0.109331560085462,0.0942270286433877,0.0885893993349017,0.100484003628434
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.DO.FE.ZS,0.0399999991059303,0.0462067104949552,0.0314371428047192,0.0265981534316003,0.0354706635005266
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.MS.ZS,0.709999978542328,0.704264856534889,0.628352317468138,0.649999976158142,0.700892095589022
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.MS.MA.ZS,0.850000023841858,0.835401122016876,0.726494428756121,0.769999980926514,0.835827938976679
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.MS.FE.ZS,0.589999973773956,0.581421810312706,0.536315399266795,0.540000021457672,0.574892412937481
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, male (%) (cumulative)",SE.SEC.CUAT.LO.MA.ZS,69.6399993896484,67.033986676775,68.8704291842289,70.7900009155273,70.1694643126857
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)",SE.SEC.CUAT.LO.ZS,65.3399963378906,62.1008703241138,64.0128500967285,66.4499969482422,65.9654653227116
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, female (%) (cumulative)",SE.SEC.CUAT.LO.FE.ZS,61.2900009155273,57.479730337383,59.4574497363168,62.4099998474121,62.0398772409567
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,

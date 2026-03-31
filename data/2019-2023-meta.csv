@@ -1,0 +1,275 @@
+Country Name,Country Code,Series Name,Series Code,2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023]
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.BA.FE.ZS,9.5,9.64838569702851,9.78291657231152,11.039999961853,10.9496045397398
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.BA.MA.ZS,11.039999961853,11.1145012533394,10.7902558941473,12.039999961853,11.7186994101123
+Viet Nam,VNM,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.BA.ZS,10.25,10.3575068448987,10.2704172552929,11.5200004577637,11.3209825236686
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.DO.ZS,0.0700000002980232,0.0767385233579148,0.0618242343905956,0.0564000089743266,0.0668640898713094
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.DO.MA.ZS,0.109999999403954,0.109331560085462,0.0942270286433877,0.0885893993349017,0.100484003628434
+Viet Nam,VNM,"Educational attainment, Doctoral or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.DO.FE.ZS,0.0399999991059303,0.0462067104949552,0.0314371428047192,0.0265981534316003,0.0354706635005266
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)",SE.TER.CUAT.MS.ZS,0.709999978542328,0.704264856534889,0.628352317468138,0.649999976158142,0.700892095589022
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, male (%) (cumulative)",SE.TER.CUAT.MS.MA.ZS,0.850000023841858,0.835401122016876,0.726494428756121,0.769999980926514,0.835827938976679
+Viet Nam,VNM,"Educational attainment, at least Master's or equivalent, population 25+, female (%) (cumulative)",SE.TER.CUAT.MS.FE.ZS,0.589999973773956,0.581421810312706,0.536315399266795,0.540000021457672,0.574892412937481
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, male (%) (cumulative)",SE.SEC.CUAT.LO.MA.ZS,69.6399993896484,67.033986676775,68.8704291842289,70.7900009155273,70.1694643126857
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)",SE.SEC.CUAT.LO.ZS,65.3399963378906,62.1008703241138,64.0128500967285,66.4499969482422,65.9654653227116
+Viet Nam,VNM,"Educational attainment, at least completed lower secondary, population 25+, female (%) (cumulative)",SE.SEC.CUAT.LO.FE.ZS,61.2900009155273,57.479730337383,59.4574497363168,62.4099998474121,62.0398772409567
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.TER.CUAT.BA.FE.ZS,CC BY-4.0,"Educational attainment, at least Bachelor's or equivalent, population 25+, female (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of female population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Bachelor's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.BA.MA.ZS,CC BY-4.0,"Educational attainment, at least Bachelor's or equivalent, population 25+, male (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of male population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Bachelor's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.BA.ZS,CC BY-4.0,"Educational attainment, at least Bachelor's or equivalent, population 25+, total (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Bachelor's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of total population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Bachelor's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.DO.ZS,CC BY-4.0,"Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of total population ages 25+,Annual,1994-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Doctoral or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.DO.MA.ZS,CC BY-4.0,"Educational attainment, Doctoral or equivalent, population 25+, male (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of male population ages 25+,Annual,1994-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Doctoral or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.DO.FE.ZS,CC BY-4.0,"Educational attainment, Doctoral or equivalent, population 25+, female (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Doctoral or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of female population ages 25+,Annual,1994-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Doctoral or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.MS.ZS,CC BY-4.0,"Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Master's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of total population ages 25+,Annual,1990-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Master's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.MS.MA.ZS,CC BY-4.0,"Educational attainment, at least Master's or equivalent, population 25+, male (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Master's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of male population ages 25+,Annual,1990-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Master's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.TER.CUAT.MS.FE.ZS,CC BY-4.0,"Educational attainment, at least Master's or equivalent, population 25+, female (%) (cumulative)",The percentage of population ages 25 and over that attained or completed Master's or equivalent.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of female population ages 25+,Annual,1990-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed Master's or equivalent by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.CUAT.LO.MA.ZS,CC BY-4.0,"Educational attainment, at least completed lower secondary, population 25+, male (%) (cumulative)",The percentage of population ages 25 and over that attained or completed lower secondary education.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of male population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed lower secondary education by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.CUAT.LO.ZS,CC BY-4.0,"Educational attainment, at least completed lower secondary, population 25+, total (%) (cumulative)",The percentage of population ages 25 and over that attained or completed lower secondary education.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of total population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed lower secondary education by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.CUAT.LO.FE.ZS,CC BY-4.0,"Educational attainment, at least completed lower secondary, population 25+, female (%) (cumulative)",The percentage of population ages 25 and over that attained or completed lower secondary education.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Outcomes,WB_WDI,% of female population ages 25+,Annual,1970-2024,"Methodology: It is calculated by dividing the number of population ages 25 and older who attained or completed lower secondary education by the total population of the same age group and multiplying by 100. The number 0 means zero or small enough that the number would round to zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data are collected by the UNESCO Institute for Statistics mainly from national population census, household survey, and labour force survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011.
+Statistical concept(s): Educational attainment indicators by education level, serve as a measure of the accumulated stock of knowledge, skills, and competencies that are typically associated with the completion of each level. These indicators not only shed light on the disparities in educational achievement among various demographic groups, thereby offering insights into the present and past efficacy of the education system in ensuring equitable access to education, but they also mirror the structure and performance of the education system itself. Furthermore, such indicators are instrumental in guiding policy decisions aimed at expanding educational opportunities.","A relative high concentration of the adult population in a given level of education reflects the capacity of the educational system in the corresponding level of education. Educational attainment is closely related to the skills and competencies of a country's population, and could be seen as a proxy of both the quantitative and qualitative aspects of the stock of human capital.","Caution is required when using this indicator for cross-country comparison, since the countries do not always classify degrees and qualifications at the same International Standard Classification of Education (ISCED) levels, even if they are received at roughly the same age or after a similar number of years of schooling. Also, certain educational programmes and study courses cannot be easily classified according to ISCED. This indicator only measures educational attainment in terms of level of education attained, i.e. years of schooling, and do not necessarily reveal the quality of the education (learning achievement and other impacts).",https://datacatalog.worldbank.org/public-licenses#cc-by

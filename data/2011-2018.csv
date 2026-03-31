@@ -1,0 +1,15 @@
+Country Name,Country Code,Series Name,Series Code,2011 [YR2011],2012 [YR2012],2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018]
+Viet Nam,VNM,"Over-age students, primary (% of enrollment)",SE.PRM.OENR.ZS,2.75147,3.48963,3.48963,1.91197,1.86799,1.64549,1.40508,1.21578
+Viet Nam,VNM,"Pupil-teacher ratio, preprimary",SE.PRE.ENRL.TC.ZS,19.31548,19.08136,18.87107,17.63441,17.42302,17.13565,17.58267,17.27017
+Viet Nam,VNM,"Pupil-teacher ratio, primary",SE.PRM.ENRL.TC.ZS,19.63155,19.39912,18.88349,19.21383,19.2242,19.62995,19.64643,20.27696
+Viet Nam,VNM,"Pupil-teacher ratio, lower secondary",SE.SEC.ENRL.LO.TC.ZS,15.88789,15.79127,15.43995,15.62477,16.3117,16.38986,16.83703,17.5546
+Viet Nam,VNM,"Primary education, pupils",SE.PRM.ENRL,7042193,7100950,7202767,7434848,7543632,7790009,7801560,8041842
+Viet Nam,VNM,"Primary education, pupils (% female)",SE.PRM.ENRL.FE.ZS,47.34723,48.55201,47.73635,47.92565,47.8702,47.94899,47.85385,47.84365
+Viet Nam,VNM,"Secondary education, general pupils (% female)",SE.SEC.ENRL.GC.FE.ZS,49.82388,50.17602,50.11836,50.0252,50.05274,50.30349,50.3726,50.26082
+Viet Nam,VNM,"Secondary education, general pupils",SE.SEC.ENRL.GC,7803327,7681611,7545159,7463517,7537413,7563776,7712699,7882203
+Viet Nam,VNM,"Repeaters, primary, total (% of total enrollment)",SE.PRM.REPT.ZS,1.50767,1.3039,1.02726,0.9943,0.94751,0.80931,0.80931,0.81974
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,

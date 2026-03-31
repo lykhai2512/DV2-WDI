@@ -1,0 +1,516 @@
+Country Name,Country Code,Series Name,Series Code,2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022],2023 [YR2023],2024 [YR2024]
+Viet Nam,VNM,Children out of school (% of primary school age),SE.PRM.UNER.ZS,0.330066207246704,0.554983649251655,0.153986370093966,0.694404004653649,1.4513478010209,2.1625017974611,2.06990810463946,1.30053611244642,1.88444866533966,1.68178805269934,1.73176990456513
+Viet Nam,VNM,"Children out of school, primary",SE.PRM.UNER,23805.8535632407,40536.9714128906,11322.155833899,51872.4235661905,112020.857700953,178013.752839176,175465.157872559,111762,166519.400535172,147000.451951424,144562.454110111
+Viet Nam,VNM,Trained teachers in lower secondary education (% of total teachers),SE.SEC.TCAQ.LO.ZS,100,99.5773976524935,99.489994450221,98.9786237791563,99.0183267452876,99.5640893990758,99.8856193623543,83.2743801191622,86.2648768821842,90.1655813032144,93.2425521709536
+Viet Nam,VNM,"Trained teachers in lower secondary education, female (% of female teachers)",SE.SEC.TCAQ.LO.FE.ZS,100,99.6896430661205,99.5812094558987,99.6821898631809,99.7798318279714,99.5591118542183,99.885448963695,83.6971590452463,87.5528062764031,91.3797812825623,94.2690675305759
+Viet Nam,VNM,"Trained teachers in lower secondary education, male (% of male teachers)",SE.SEC.TCAQ.LO.MA.ZS,100,99.3350983205675,99.2926265653538,97.4835688300203,97.3922751528684,99.5748290189931,99.8860009119927,82.3133135419045,83.2985845669145,87.3416232368269,90.8223201174743
+Viet Nam,VNM,Trained teachers in preprimary education (% of total teachers),SE.PRE.TCAQ.ZS,97.7467015379811,98.6794606482985,98.3908920288086,98.8181381225586,99.1664977135005,99.754293192319,99.679451339968,81.720101491816,85.5821580608728,88.6078294452124,91.0557773795426
+Viet Nam,VNM,"Trained teachers in preprimary education, female (% of female teachers)",SE.PRE.TCAQ.FE.ZS,97.914626788911,98.7049710884913,..,..,99.1729439356124,99.7542528023971,99.6803417654396,81.7668403191978,85.6358244063933,88.6458392826546,91.0947469366755
+Viet Nam,VNM,"Trained teachers in preprimary education, male (% of male teachers)",SE.PRE.TCAQ.MA.ZS,85.2898019075569,96.6121050628093,..,..,96.7375886524823,99.7777777777778,99.2063492063492,58.8132635253054,66.4072632944228,68.8888888888889,70.5882352941177
+Viet Nam,VNM,Trained teachers in primary education (% of total teachers),SE.PRM.TCAQ.ZS,100,99.4760488579343,99.7742180156888,99.7202224731445,99.8683812405446,99.5209262093286,99.678201314717,84.2788710209832,74.7324439231784,82.7920493893579,89.2480323754714
+Viet Nam,VNM,"Trained teachers in primary education, female (% of female teachers)",SE.PRM.TCAQ.FE.ZS,100,99.6116836568755,99.8737386000524,..,99.9009086067492,99.6534103825335,99.6783017024745,96.7208132224634,74.7427741254984,83.2678308099849,89.9375313756063
+Viet Nam,VNM,"Trained teachers in primary education, male (% of male teachers)",SE.PRM.TCAQ.MA.ZS,100,99.0069535972367,99.424738517508,..,99.7522613354842,99.0599025508742,99.6778334608833,38.3727450024378,74.693750776494,80.997268963087,86.6472712680578
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Aggregation method,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.PRM.UNER.ZS,CC BY-4.0,Children out of school (% of primary school age),Children out of school are the percentage of primary-school-age children who are not enrolled in primary or secondary school. Children in the official primary age group that are in preprimary education should be considered out of school.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,% of children in primary school age,Annual,1970-2024,Weighted average,"Methodology: The rate of out-of-school children allows to compare across countries with different population sizes. It shows the share of official primary-school-age children who never attended school or dropped out to the population of official primary school age.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses. The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator measures the proportion of the population within the official age range for a specific educational level who are not currently enrolled in school. The data aids in identifying these individuals to tailor targeted interventions and formulate effective policies, ensuring that all children have the opportunity to attend school. It encompasses children who have never attended school, those who may enroll at a later age, and those who have started education but did not continue to the expected age of completion for the specified level.","Ensuring access to education is fundamental to social and economic advancement, aligning with the global development agenda. The out-of-school rate serves as a critical metric within the Sustainable Development Goal 4 framework, providing a measure to evaluate progress toward achieving universal education. This rate, alongside the number of out-of-school children and adolescents, highlights the urgency to enhance educational accessibility.","The administrative data used in the calculation of the rate of out-of-school children are based on enrolment at a specific date which can bias the results by either counting enrolled children who never attend school or by omitting those who enroll after the reference date for reporting enrolment data. Furthermore, children who drop out of school after the reference date are not counted as out of school. Discrepancies between enrolment and population data from different sources can also result in over- or underestimates of the rate. Lastly, the international comparability of this indicator can be affected by the use of different concepts of enrolment and out-of-school children across countries.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRM.UNER,CC BY-4.0,"Children out of school, primary",Children out of school are the number of primary-school-age children not enrolled in primary or secondary school.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2025-09-22, date published: 2025-09",Education: Participation,WB_WDI,Number,Annual,1970-2024,Sum,"Methodology: The number of out-of-school children is calculated by subtracting the number of primary school-age children enrolled in primary or secondary school from the total population of the official primary school-age children. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. Population data are drawn from the United Nations Population Division. Using a single source for population data standardizes definitions, estimations, and interpolation methods, ensuring a consistent methodology across countries and minimizing potential enumeration problems in national censuses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator measures the proportion of the population within the official age range for a specific educational level who are not currently enrolled in school. The data aids in identifying these individuals to tailor targeted interventions and formulate effective policies, ensuring that all children have the opportunity to attend school. It encompasses children who have never attended school, those who may enroll at a later age, and those who have started education but did not continue to the expected age of completion for the specified level.","Ensuring access to education is fundamental to social and economic advancement, aligning with the global development agenda. The out-of-school rate serves as a critical metric within the Sustainable Development Goal 4 framework, providing a measure to evaluate progress toward achieving universal education. This rate, alongside the number of out-of-school children and adolescents, highlights the urgency to enhance educational accessibility.","Due to different data sources for enrollment and population data, the number may not capture the actual number of children not attending in primary school.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.TCAQ.LO.ZS,CC BY-4.0,Trained teachers in lower secondary education (% of total teachers),Trained teachers in lower secondary education are the percentage of lower secondary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of total teachers in lower secondary education,Annual,1997-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.TCAQ.LO.FE.ZS,CC BY-4.0,"Trained teachers in lower secondary education, female (% of female teachers)",Trained teachers in lower secondary education are the percentage of lower secondary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of female teachers in lower secondary education,Annual,1997-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The percentage of trained educators serves as a barometer for a country's commitment to improving its teaching workforce, and increasing this percentage aligns with the aims of Sustainable Development Goal target 4.c. Female educators, in particular, are vital as they provide inspiration and encouragement for young girls to continue their education. These professionals are instrumental in engaging and maintaining girls' attendance in schools, confronting entrenched gender biases in communities, raising parental aspirations for their daughters, and aiding in the reduction of the educational attainment disparity between male and female students.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.SEC.TCAQ.LO.MA.ZS,CC BY-4.0,"Trained teachers in lower secondary education, male (% of male teachers)",Trained teachers in lower secondary education are the percentage of lower secondary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of male teachers in lower secondary education,Annual,1997-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRE.TCAQ.ZS,CC BY-4.0,Trained teachers in preprimary education (% of total teachers),Trained teachers in preprimary education are the percentage of preprimary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of total teachers in preprimary education,Annual,1998-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRE.TCAQ.FE.ZS,CC BY-4.0,"Trained teachers in preprimary education, female (% of female teachers)",Trained teachers in preprimary education are the percentage of preprimary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of female teachers in preprimary education,Annual,1998-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The percentage of trained educators serves as a barometer for a country's commitment to improving its teaching workforce, and increasing this percentage aligns with the aims of Sustainable Development Goal target 4.c. Female educators, in particular, are vital as they provide inspiration and encouragement for young girls to continue their education. These professionals are instrumental in engaging and maintaining girls' attendance in schools, confronting entrenched gender biases in communities, raising parental aspirations for their daughters, and aiding in the reduction of the educational attainment disparity between male and female students.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRE.TCAQ.MA.ZS,CC BY-4.0,"Trained teachers in preprimary education, male (% of male teachers)",Trained teachers in preprimary education are the percentage of preprimary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of male teachers in preprimary education,Annual,1998-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRM.TCAQ.ZS,CC BY-4.0,Trained teachers in primary education (% of total teachers),Trained teachers in primary education are the percentage of primary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of total teachers in primary education,Annual,1997-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRM.TCAQ.FE.ZS,CC BY-4.0,"Trained teachers in primary education, female (% of female teachers)",Trained teachers in primary education are the percentage of primary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of female teachers in primary education,Annual,1998-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The percentage of trained educators serves as a barometer for a country's commitment to improving its teaching workforce, and increasing this percentage aligns with the aims of Sustainable Development Goal target 4.c. Female educators, in particular, are vital as they provide inspiration and encouragement for young girls to continue their education. These professionals are instrumental in engaging and maintaining girls' attendance in schools, confronting entrenched gender biases in communities, raising parental aspirations for their daughters, and aiding in the reduction of the educational attainment disparity between male and female students.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.PRM.TCAQ.MA.ZS,CC BY-4.0,"Trained teachers in primary education, male (% of male teachers)",Trained teachers in primary education are the percentage of primary school teachers who have received the minimum organized teacher training (pre-service or in-service) required for teaching in a given country.,"Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of male teachers in primary education,Annual,1998-2024,Weighted average,"Methodology: Share of trained teachers is calculated by dividing the number of trained teachers of the specified level of education by total number of teachers at the same level of education, and multiplying by 100. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data on education are collected by the UNESCO Institute for Statistics from official responses to its annual education survey. All the data are mapped to the International Standard Classification of Education (ISCED) to ensure the comparability of education programs at the international level. The current version was formally adopted by UNESCO Member States in 2011. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The reference years reflect the school year for which the data are presented. In some countries the school year spans two calendar years (for example, from September 2010 to June 2011); in these cases the reference year refers to the year in which the school year ended (2011 in the example).
+Statistical concept(s): This indicator quantifies the proportion of educators within the teaching workforce who have received comprehensive pedagogical training. A high percentage signifies that a substantial majority of students are instructed by teachers equipped with the necessary pedagogical skills and training to teach effectively. The role of teachers is pivotal in upholding the standard of education delivered. Optimal educational outcomes are achieved when all teachers are provided with sufficient, pertinent, and targeted pedagogical training, enabling them to teach at their designated educational level. Moreover, it is crucial that teachers possess the academic qualifications required to competently cover the subject matter they are tasked with teaching.","The proportion of trained educators is indicative of a nation's dedication to the enhancement of its educational workforce, and the expansion of this metric is a specific objective under Sustainable Development Goal target 4.c. Teachers serve as a crucial asset, particularly for first-generation learners within their families, who depend significantly on educators to gain fundamental literacy skills. Nonetheless, a surge in student enrollment can lead to a scarcity of qualified teachers. The allocation of funds for education plays a vital role in ensuring the proper distribution of teachers, as their salaries constitute a significant portion of educational expenditures. This scarcity of trained educators can lead to the employment of less qualified teachers in more disadvantaged regions.","This indicator does not take into account differences in teachers' experiences and status, teaching methods, teaching materials, and classroom conditions - all factors that affect the quality of teaching and learning. Some teachers without formal training may have acquired equivalent pedagogical skills through professional experience. In addition, national standards regarding teacher qualifications and pedagogical skills may vary.",https://datacatalog.worldbank.org/public-licenses#cc-by

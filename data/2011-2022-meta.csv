@@ -1,0 +1,91 @@
+Country Name,Country Code,Series Name,Series Code,2011 [YR2011],2012 [YR2012],2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021],2022 [YR2022]
+Viet Nam,VNM,"Government expenditure on education, total (% of GDP)",SE.XPD.TOTL.GD.ZS,3.7802300453186,4.40817022323608,4.52833986282349,3.54012312110584,3.41660449674943,3.46906995773315,3.41865686539527,3.29537010192871,3.08499832693462,3.21652900152514,2.94517488804327,2.88738689372749
+Viet Nam,VNM,"Government expenditure on education, total (% of government expenditure)",SE.XPD.TOTL.GB.ZS,17.8112697601318,18.7849903106689,18.515510559082,16.8122897465781,15.0167530601057,15.6049003601074,15.4742966457626,16.0908699035644,15.571949049475,14.4718812047317,14.8174866627149,15.4493443908999
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Data from database: World Development Indicators,,,,,,,,,,,,,,,
+Last Updated: 02/24/2026,,,,,,,,,,,,,,,
+Code,License Type,Indicator Name,Long definition,Source,Topic,Dataset,Unit of measure,Periodicity,Reference period,Aggregation method,Statistical concept and methodology,Development relevance,Limitations and exceptions,License URL
+SE.XPD.TOTL.GD.ZS,CC BY-4.0,"Government expenditure on education, total (% of GDP)","General government expenditure on education (current, capital, and transfers) is expressed as a percentage of GDP. It includes expenditure funded by transfers from international sources to government. General government usually refers to local, regional and central governments.","Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of GDP,Annual,1970-2024,Median,"Methodology: Government expenditure on education, total (% of GDP) is calculated by dividing total government expenditure for all levels of education by the GDP, and multiplying by 100. Aggregate data are based on World Bank estimates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Information pertaining to educational expenditures is sourced from national governments, which provide the data in response to the annual survey conducted by the UNESCO Institute for Statistics (UIS) or through the joint UNESCO-OECD-Eurostat (UOE) data collection initiative. The responses to the questionnaire regarding educational spending are typically derived from the annual financial statements issued by either the Ministry of Finance or the Ministry of Education, or from the national accounts maintained by the National Statistical Office. Additionally, data concerning GDP and overall government expenditure are accessible via the IMF’s World Economic Outlook database, which is updated annually.
+Statistical concept(s): Generally, elevated levels of the indicator suggest that a government places a high priority on educational policy. Values ranging from 4% to 6% are indicative of a country achieving the benchmark set forth by the Education 2030 Framework for Action (https://uis.unesco.org/sites/default/files/documents/education-2030-incheon-framework-for-action-implementation-of-sdg4-2016-en_2.pdf).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Educational expenditure encompasses spending on fundamental educational goods and services, including teaching personnel, school infrastructure, textbooks, and instructional materials, as well as on ancillary educational goods and services such as support services, general administration, and other related activities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Funding for education may originate from public sources, encompassing all government ministries and agencies that finance or support educational programs within the country, as well as from international and private sources, such as household contributions.","Investment in education acts as a driving force for economic growth, enhances productivity, and promotes the betterment of individual and collective welfare. This indicator evaluates the extent to which a government prioritizes education in relation to its overall economic prosperity.",Data may refer to spending by the ministry of education only (excluding spending on educational activities by other ministries).,https://datacatalog.worldbank.org/public-licenses#cc-by
+SE.XPD.TOTL.GB.ZS,CC BY-4.0,"Government expenditure on education, total (% of government expenditure)","General government expenditure on education (current, capital, and transfers) is expressed as a percentage of total general government expenditure on all sectors (including health, education, social services, etc.). It includes expenditure funded by transfers from international sources to government. General government usually refers to local, regional and central governments.","Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date published: 2025-09",Education: Inputs,WB_WDI,% of government expenditure,Annual,1980-2024,Median,"Methodology: Expenditure on education, total (% of government expenditure) is calculated by dividing total government expenditure on education by the total government expenditure on all sectors and multiplying by 100. Aggregate data are based on World Bank estimates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Information regarding educational expenditures is obtained from national governments through their responses to the annual survey on formal education conducted by the UNESCO Institute for Statistics (UIS). The data provided for this questionnaire often originates from the annual financial reports of the Ministry of Finance or the Ministry of Education, or from the national accounts compiled by the National Statistical Office. Additionally, comprehensive data on general government expenditure across all sectors are sourced from the International Monetary Fund's (IMF) World Economic Outlook database, which undergoes an annual update.
+Statistical concept(s): A greater allocation of government funds towards education reflects a significant emphasis on educational priorities in comparison to other public sector investments. It is important to consider, however, that the capacity of governments to spend varies, resulting in differing budget sizes. Additionally, demographic factors such as the age distribution within a country can influence the proportion of spending on education versus other areas like health or social security.","Investment in education serves as a driving force for economic growth, enhancement of productivity, and the promotion of individual and collective prosperity. This indicator is instrumental in evaluating the extent to which a government prioritizes education, whether over time or in relation to other nations. Furthermore, it reflects the government's dedication to the investment in human capital development.","Data on government expenditure on education may refer to spending by the ministry of education only (excluding spending on educational activities by other ministries). In addition, definitions and methods of data on total general government expenditure may differ across countries.",https://datacatalog.worldbank.org/public-licenses#cc-by
