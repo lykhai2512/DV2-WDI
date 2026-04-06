@@ -1,0 +1,390 @@
+# Project Overview: Viet Nam Education & Economy (2011-2024)
+
+## Dataset Overview
+This dataset is a specialized extract from the World Bank's World Development Indicators (WDI). It focuses on the intersection of Viet Nam's economic growth and its educational system's performance. The objective is to facilitate data visualization and correlation analysis to determine how national wealth, income distribution, and government spending influence literacy, enrollment, and long-term academic attainment.
+
+## Data Structure
+| Attribute | Details |
+| :--- | :--- |
+| **Total Variables** | 91 |
+| **Time Frame** | 2011 - 2024 |
+| **Regional Focus** | Viet Nam |
+| **Key Categories** | Economics (GDP/GNI), Poverty & Equity, Education Quality, Gender Parity, and Attainment Levels. |
+| **Missing Data Handling** | Usage of Interpolation and Omission for missing data |
+| **Primary Units** | %, Constant 2015 US$, Ratios, and Numerical Counts. |
+
+## Import libraries
+
+The following libraries are required for data processing and visualization:
+- `pandas`: Data manipulation and aggregation
+- `numpy`: Numerical computations
+- `matplotlib.pyplot`: Visualization framework
+- `seaborn`: Enhanced statistical graphics
+
+## Load analytical data
+
+Data is loaded from 14 CSV files in the `data/` subfolder, each covering different year ranges:
+- 2011-2017.csv, 2011-2018.csv, 2011-2021.csv
+- 2011-2022-even.csv, 2011-2022.csv, 2011-2023.csv, 2011-2024.csv
+- 2013-2018.csv, 2013-2024.csv
+- 2014-2018.csv, 2014-2023.csv, 2014-2024.csv
+- 2015-2022.csv, 2019-2023.csv
+
+A custom `VietnamDataBody` class consolidates all CSV files into a single unified DataFrame, indexed by indicator name with years as columns.
+
+## Statistical Analysis of the WDI Data
+
+| Data Name | Data Type | Attribute	| Year Range | Mean	| Std Dev |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Adjusted net national income (annual % growth) | Real Value | Quantitative (Continuous) | 2011-2021 | 6.67 | 2.73 |
+| Adjusted net national income (constant 2015 US$) | Real Value | Quantitative (Discrete) | 2011-2021 | 215.77B | 47.45B |
+| Adjusted net national income per capita (constant 2015 US$) | Real Value | Quantitative (Discrete) | 2011-2021 | 2,284.08 | 418.97 |
+| Adjusted net savings, excluding emissions (% of GNI) | Real Value | Quantitative (Continuous) | 2011-2021 | 18.55 | 1.39 |
+| Adjusted net savings, including emissions (% of GNI) | Real Value | Quantitative (Continuous) | 2011-2021 | 18.20 | 1.40 |
+| Adolescents out of school (% of secondary age) | Real Value | Quantitative (Continuous) | 2014-2023 | 6.17 | 2.71 |
+| Adolescents out of school, female (%) | Real Value | Quantitative (Continuous) | 2014-2023 | 7.17 | 2.12 |
+| Adolescents out of school, male (%) | Real Value | Quantitative (Continuous) | 2014-2023 | 5.20 | 3.34 |
+| Children out of school (% of primary age) | Real Value | Quantitative (Continuous) | 2014-2024 | 1.27 | 0.72 |
+| Children out of school, primary (count) | Real Value | Quantitative (Discrete) | 2014-2024 | 105,716.5 | 63,123.4 |
+| Compulsory education, duration (years) | Real Value | Quantitative (Continuous) | 2011-2024 | 9.71 | 0.47 |
+| Ed. Attainment: Doctoral, female (%) | Real Value | Quantitative (Continuous) | 2019-2023 | 0.04 | 0.01 |
+| Ed. Attainment: Doctoral, male (%) | Real Value | Quantitative (Continuous) | 2019-2023 | 0.10 | 0.01 |
+| Ed. Attainment: Bachelor's, total (%) | Real Value | Quantitative (Continuous) | 2019-2023 | 10.74 | 0.62 |
+| Ed. Attainment: Master's, total (%) | Real Value | Quantitative (Continuous) | 2019-2023 | 0.68 | 0.04 |
+| Ed. Attainment: Lower Secondary, total (%) | Real Value | Quantitative (Continuous) | 2019-2023 | 64.77 | 1.75 |
+| Ed. Attainment: Primary, total (%) | Real Value | Quantitative (Continuous) | 2011-2023 | 82.60 | 3.52 |
+| Ed. Attainment: Upper Secondary, total (%) | Real Value | Quantitative (Continuous) | 2011-2023 | 31.99 | 4.99 |
+| GDP (constant 2015 US$) | Real Value | Quantitative (Discrete) | 2011-2024 | 285.63B | 69.60B |
+| GDP growth (annual %) | Real Value | Quantitative (Continuous) | 2011-2024 | 6.10 | 1.69 |
+| GDP per capita (constant 2015 US$) | Real Value | Quantitative (Discrete) | 2011-2024 | 2,974.24 | 601.11 |
+| GNI growth (annual %) | Real Value | Quantitative (Continuous) | 2011-2024 | 6.58 | 2.95 |
+| Gini index | Real Value | Quantitative (Continuous) | 2012-2022 | 35.72 | 0.69 |
+| Gov expenditure on education (% of GDP) | Real Value | Quantitative (Continuous) | 2011-2022 | 3.50 | 0.52 |
+| Gov expenditure on education (% of gov exp) | Real Value | Quantitative (Continuous) | 2011-2022 | 16.20 | 1.45 |
+| Income share held by lowest 20% | Real Value | Quantitative (Continuous) | 2012-2022 | 6.87 | 0.21 |
+| Income share held by highest 20% | Real Value | Quantitative (Continuous) | 2012-2022 | 42.95 | 0.59 |
+| Multidimensional poverty headcount (%) | Real Value | Quantitative (Continuous) | 2012-2022 | 3.32 | 1.40 |
+| Over-age students, primary (%) | Real Value | Quantitative (Continuous) | 2011-2018 | 2.22 | 0.90 |
+| Poverty headcount ratio at $3.00/day (%) | Real Value | Quantitative (Continuous) | 2012-2022 | 2.45 | 0.96 |
+| Poverty headcount ratio at $8.30/day (%) | Real Value | Quantitative (Continuous) | 2012-2022 | 29.50 | 9.31 |
+| Primary education, pupils (count) | Real Value | Quantitative (Discrete) | 2011-2024 | 8.10M | 786,221 |
+| Pupil-teacher ratio, primary | Real Value | Quantitative (Continuous) | 2011-2018 | 19.49 | 0.42 |
+| Repeaters, primary, total (%) | Real Value | Quantitative (Continuous) | 2011-2018 | 1.03 | 0.25 |
+| School enrollment, preprimary (% gross) | Real Value | Quantitative (Continuous) | 2011-2021 | 87.96 | 8.21 |
+| School enrollment, primary (% gross) | Real Value | Quantitative (Continuous) | 2011-2021 | 103.29 | 1.25 |
+| School enrollment, tertiary (% gross) | Real Value | Quantitative (Continuous) | 2011-2017 | 27.62 | 2.37 |
+| Trained teachers in primary education (%) | Real Value | Quantitative (Continuous) | 2014-2024 | 93.55 | 9.17 |
+| Trained teachers in preprimary, male (%) | Real Value | Quantitative (Continuous) | 2014-2024 | 82.48 | 16.33 |
+
+## Extract metadata description
+
+Metadata is extracted from 14 corresponding `-meta.csv` files that accompany each data file. The `VietnamMetadataExtractor` class parses indicator names and their long definitions (World Bank descriptions) to provide contextual information for each metric.
+
+## Metadata Analysis of the Metrics (2011-2024)
+
+| Data Group | Description |
+| :--- | :--- | 
+| **Adjusted net national income (annual % growth)** | Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars. |
+| **Adjusted net national income (constant 2015 US$)** | Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion, expressed in constant 2015 US dollars. |
+| **Adjusted net national income per capita (constant 2015 US$)** | The adjusted net national income divided by the midyear population, adjusted for inflation using the 2015 base year. |
+| **Adjusted net savings, excluding/including particulate emission damage (% of GNI)** | Net national savings plus education expenditure minus energy, mineral, and forest depletion, and damage from carbon dioxide and particulate emissions. |
+| **Adolescents out of school (% of lower secondary school age)** | Percentage of lower secondary school age adolescents who are not enrolled in any level of education. |
+| **Children out of school (% of primary school age)** | Percentage of primary-school-age children not enrolled in primary or secondary school. |
+| **Compulsory education, duration (years)** | The total number of years that children are legally required to attend school. |
+| **Educational attainment (Doctoral, Master's, Bachelor's, etc.)** | The cumulative percentage of the population aged 25+ that has attained or completed a specific level of education (e.g., Primary, Lower/Upper Secondary, or Tertiary degrees). |
+| **GDP (constant 2015 US$)** | The total market value of all final goods and services produced within a country in a given period, adjusted for inflation using 2015 as the base year. |
+| **GDP growth (annual %)** | Annual percentage growth rate of GDP at market prices based on constant local currency. |
+| **GDP per capita (constant 2015 US$)** | Gross domestic product divided by midyear population, expressed in constant 2015 US dollars. |
+| **GNI growth (annual %)** | Annual percentage growth rate of GNI (Gross National Income) based on constant local currency. |
+| **Gini index** | Measures the extent to which the distribution of income (or consumption expenditure) among individuals or households deviates from a perfectly equal distribution ($0$ = perfect equality, $100$ = perfect inequality). |
+| **Government expenditure on education (% of GDP / % of gov. exp)** | Total general government expenditure on education expressed as a percentage of the nation's GDP or as a percentage of total government spending. |
+| **Income share held by lowest/highest/middle 20%** | The percentage of total national income that accrues to specific quintiles of the population, ranging from the poorest $20\%$ to the wealthiest $20\%$. |
+| **Multidimensional poverty headcount ratio (%)** | The percentage of the population living in households that are multidimensionally poor, based on deprivations in health, education, and living standards. |
+| **Over-age students, primary (%)** | The percentage of enrolled students who are older than the official school-age range for primary education. |
+| **Poverty headcount ratio at $3.00 / $4.20 / $8.30 a day** | Percentage of the population living on less than the specified amount per day at 2021 purchasing power parity (PPP). |
+| **Primary education, pupils** | Total number of students enrolled in primary education, regardless of age. |
+| **Pupil-teacher ratio (Preprimary, Primary, Secondary)** | The average number of pupils per teacher at the specified level of education. |
+| **Repeaters, primary (% of enrollment)** | The percentage of students in primary education who are enrolled in the same grade as the previous year. |
+| **School enrollment, preprimary / primary / secondary / tertiary (% gross)** | Total enrollment in a specific level of education, regardless of age, expressed as a percentage of the population in the official age group for that level. |
+| **Trained teachers in education (% of total teachers)** | Percentage of teachers at a specific level who have received at least the minimum organized teacher training required for teaching in the country. |
+
+## Handle missing data
+
+There are 2 regions within the dataset that contain missing data:
+- In the field of Educational attainment, at least completed primary, population 25+ years, female (%) (cumulative), there exists 1 missing data point in 2018.
+- In the field of Trained teachers, there is a cluster of missing values affecting both the Preprimary and Primary education series during the years 2016 and 2017.
+
+### Specific Missing Data Points
+
+**Educational Attainment (Female):**
+- Trained teachers in preprimary education, female (%) and male (%) both lack records for the consecutive years 2016 and 2017.
+- Trained teachers in primary education, female (%) and male (%) both lack records for the year 2017.
+
+### Missing Data Resolution Strategy
+
+Upon further observation, we can identify the appropriate method to fill in the missing data in Educational attainment (female) based on the male and total counterparts:
+
+- For Education attainment, at least completed primary, population 25+ years, male (%), we can observe a noticeable increase in value after 2018, where before that it was stable (from 2016 to 2018: $85.67\%, 85.58\%, 85.66\%$) until 2019, where it jumped to $91.15\%$, increasing by approximately $5.5\%$.
+
+- For Education attainment, at least completed primary, population 25+ years, total (%), we can also observe a noticeable increase in value after 2018, where before that it was stable (from 2016 to 2018: $81.44\%, 81.39\%, 81.35\%$) until 2019, where it jumped to $88.63\%$, increasing by approximately $7.3\%$.
+
+- The same gap can be found from the values around the missing record within the field of Education attainment, at least completed primary, population 25+ years, female (%), where it was stable from 2016 to 2017: $77.56\%, 77.50\%$, but increased significantly in 2019: $86.27\%$. It is reasonable to assume that the missing record in 2018 will follow along with the general trend of its similar fields. 
+
+**Solution:** The record will be filled in using **Linear Interpolation**, following the assumption that the value remains stable before 2018, until 2019 where a noticeable spike happened in all fields.
+
+## Handle missing data - Omission Strategy
+
+While the gap in Educational Attainment was resolved through interpolation, a different approach is required for the Trained Teacher series. In this instance, the missing records in 2016 and 2017 will be handled using **Omission**.
+
+### Rationale for Omission
+
+Unlike the linear growth patterns observed in attainment, the teacher quality data lacks a consistent proxy or a clear mathematical trend during the missing years. Specifically:
+
+- **Preprimary Gap (2016-2017):** Both female and male teacher data are missing for two consecutive years. Attempting to interpolate over a 24-month gap without a stable secondary variable (like enrollment) could introduce significant statistical noise.
+
+- **Primary Gap (2017):** While only one year is missing, the values for "Trained teachers" often fluctuate based on specific annual government certification drives or policy changes that do not follow a linear progression.
+
+### Quality Assurance
+
+Since these specific years lack a "stable" baseline that mirrors other fields, omitting these specific data points ensures that our final correlation analysis (linking education quality to economic growth) relies only on verified, empirical records provided by the World Bank. This preserves data integrity and prevents the introduction of spurious patterns.
+
+## Analytical Plan - Question List
+
+To provide a multidimensional view of Viet Nam's development from 2011 to 2024, the following questions are used to further analyze and make conclusions of Vietnam's Economic and Education growth:
+
+### 1. Economic Trajectory
+**Question:** How has Viet Nam's GDP and GNI growth fluctuated over the last decade, and do they mirror each other's volatility?
+
+### 2. The Wealth-Education Correlation
+**Question:** Is there a measurable correlation between GDP per capita and the percentage of the population attaining Bachelor's degrees?
+
+### 3. Income Inequality Mapping
+**Question:** How has the gap between the income share held by the highest 20% and the lowest 20% evolved in relation to the Gini Index?
+
+### 4. Educational Resource Allocation
+**Question:** How does the government prioritize education relative to its total budget compared to the education sector's share of the national GDP?
+
+### 5. Gender Parity in Out-of-School Adolescents
+**Question:** What is the gender distribution among adolescents out of school, and has the female-to-male ratio improved over time?
+
+### 6. Teacher Qualification Standards
+**Question:** How do training levels compare across different educational tiers (Preprimary vs. Primary), and where is the greatest variance in teacher quality?
+
+### 7. Efficiency of Primary Education
+**Question:** Is there a relationship between the Pupil-Teacher ratio and the percentage of repeaters in primary school?
+
+### 8. Poverty Threshold Analysis
+**Question:** How does the headcount ratio change when shifting the poverty definition from $3.00/day to $8.30/day across the timeline?
+
+### 9. High-Level Attainment Composition
+**Question:** What is the proportional breakdown of postgraduate attainment (Master's vs. Doctoral) within the 25+ population?
+
+### 10. Savings and Environmental Cost
+**Question:** How much of Viet Nam's national savings is "lost" to particulate emission damage when comparing adjusted net savings?
+
+### 11. Early Childhood Education Momentum
+**Question:** Has the growth in preprimary school enrollment kept pace with the increase in adjusted net national income?
+
+### 12. Multidimensional vs. Monetary Poverty
+**Question:** Does the Multidimensional Poverty index follow the same downward trajectory as the $3.00/day poverty headcount?
+
+## Plot Preparation
+
+Twelve visualization functions are prepared to address each analytical question. Each plot function extracts specific indicators from the unified DataFrame, applies appropriate filtering (e.g., year ranges, gender breakdowns), and renders the visualization using matplotlib and seaborn.
+
+---
+
+## Q1 - Economic Trajectory: GDP vs GNI Growth (2011-2024)
+
+**Question:** How has Viet Nam's GDP and GNI growth fluctuated over the last decade, and do they mirror each other's volatility?
+
+**Graph Used:** Line Chart
+
+Both GDP and GNI have numerical values that can be compared on a scale. A line chart visualizes their differences over the years and their general trend.
+
+### Graph Observations:
+- Both GDP and GNI maintained a similar growth rate throughout the 14-year period, showing similar trends. The line for GNI growth behaves more erratically than GDP growth, with higher deviation from year to year.
+- The delta gap between GDP and GNI growth is roughly 4% in 2012 and 2021, otherwise, the gap fluctuates between 0-2%, further reinforcing their similarity.
+- Both lines take a noticeable dive after 2019, with GDP growth only at slightly higher than 2% in 2021 while GNI growth experiences a deeper dip, with negative values in the same year (-1%). GNI growth in 2021 is the only instance of negative growth within the 14-year span.
+- After the dive in 2019-2021, both growth rates make a full recovery starting from 2022 (slightly higher than 8%), even higher than before the dive in 2019. The general trend after 2022 remains stable.
+
+### Key Conclusions:
+- GDP and GNI growth rates moved in synchronization, suggesting that the factors driving domestic production are the primary drivers of national income throughout the decades.
+- An economic shock happened in Vietnam during 2019-2021 that impacted the economy, stunting growth heavily.
+- The sharp rebound in 2022 demonstrates high economic elasticity. Despite the severe contraction in 2021, the economy did not stagnate but returned to its pre-shock growth corridor by 2023.
+
+---
+
+## Q2 - Wealth-Education Correlation (2019-2023)
+
+**Question:** Is there a measurable correlation between GDP per capita and the percentage of the population attaining Bachelor's degrees?
+
+**Graph Used:** Scatter Plot with Linear Regression Line
+
+This visualization examines the relationship between national wealth and educational attainment using GDP per capita as a proxy for wealth and Bachelor's degree completion rates. The regression line and residual lines help identify how closely these variables are related.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q3 - Income Inequality Mapping (2012-2022)
+
+**Question:** How has the gap between the income share held by the highest 20% and the lowest 20% evolved in relation to the Gini Index?
+
+**Graph Used:** Stacked Area Chart
+
+This visualization shows the distribution of income across the population extremes (richest and poorest quintiles) over time, providing insight into wealth concentration and income inequality trends.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q4 - Educational Resource Allocation (2011-2022)
+
+**Question:** How does the government prioritize education relative to its total budget compared to the education sector's share of the national GDP?
+
+**Graph Used:** Grouped Bar Chart
+
+This visualization compares two metrics of government investment in education: education spending as a percentage of GDP and education spending as a percentage of total government expenditure, showing how resource allocation priorities may have shifted over time.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q5 - Gender Parity in Out-of-School Adolescents (2014-2023)
+
+**Question:** What is the gender distribution among adolescents out of school, and has the female-to-male ratio improved over time?
+
+**Graph Used:** Stacked Bar Chart
+
+This visualization displays the gender breakdown of secondary-age children not enrolled in school, allowing for comparison of educational access disparities between genders across the decade.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q6 - Teacher Qualification Standards (2014-2024)
+
+**Question:** How do training levels compare across different educational tiers (Preprimary vs. Primary), and where is the greatest variance in teacher quality?
+
+**Graph Used:** Box Plot
+
+This visualization compares the distribution of trained teacher percentages across preprimary and primary education levels, highlighting variability and consistency in teacher qualifications across educational tier and timeframe (excluding 2016-2017 missing data).
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q7 - Efficiency of Primary Education (2011-2018)
+
+**Question:** Is there a relationship between the Pupil-Teacher ratio and the percentage of repeaters in primary school?
+
+**Graph Used:** Scatter Plot with Trajectory Arrows
+
+This visualization traces the path of primary education efficiency over time, showing how the pupil-teacher ratio and student repetition rates have evolved, with arrows indicating temporal progression.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q8 - Poverty Threshold Analysis (2012-2022)
+
+**Question:** How does the headcount ratio change when shifting the poverty definition from $3.00/day to $8.30/day across the timeline?
+
+**Graph Used:** Step Line Chart
+
+This visualization compares poverty prevalence rates under different income thresholds, demonstrating how poverty measurements vary based on the definition used.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q9 - High-Level Attainment Composition (2023)
+
+**Question:** What is the proportional breakdown of postgraduate attainment (Master's vs. Doctoral) within the 25+ population?
+
+**Graph Used:** Pie Chart
+
+This visualization provides a snapshot of postgraduate educational attainment distribution in 2023, showing the proportion of the population that has completed Master's versus Doctoral degrees.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q10 - Savings and Environmental Cost (2011-2021)
+
+**Question:** How much of Viet Nam's national savings is "lost" to particulate emission damage when comparing adjusted net savings?
+
+**Graph Used:** Stacked Area Chart
+
+This visualization decomposes adjusted net savings into the component retained after subtracting environmental damage from particulate emissions, quantifying the economic cost of air pollution.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q11 - Early Childhood Education Momentum (2011-2021)
+
+**Question:** Has the growth in preprimary school enrollment kept pace with the increase in adjusted net national income?
+
+**Graph Used:** Dual-Axis Line Chart
+
+This visualization charts two variables on separate y-axes to compare the growth trajectories of preprimary enrollment rates and national income, revealing whether educational expansion aligns with economic growth.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]
+
+---
+
+## Q12 - Multidimensional vs. Monetary Poverty (2012-2022)
+
+**Question:** Does the Multidimensional Poverty index follow the same downward trajectory as the $3.00/day poverty headcount?
+
+**Graph Used:** Multi-Series Line Chart
+
+This visualization compares two distinct poverty measures—one based on monetary income thresholds and one based on deprivations in health, education, and living standards—to assess whether different poverty definitions show consistent trends.
+
+### Graph Observations:
+[Observations to be filled in later]
+
+### Key Conclusions:
+[Conclusions to be filled in later]

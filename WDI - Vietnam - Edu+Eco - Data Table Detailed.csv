@@ -1,0 +1,35 @@
+Duration,Data,Missing data count,Missing data solution,Unit,Total number of columns
+2011-2022 (Even Years),"Poverty gap at $3.00, $4.20, $8.30 a day (2021 PPP)",-,-,%,3
+2011-2022 (Even Years),"Poverty headcount ratio at $3.00, $4.20, $8.30 a day (2021 PPP)",-,-,%,3
+2011-2022 (Even Years),Gini index,-,-,num,1
+2011-2022 (Even Years),"Income share held by lowest 10%/20%, highest 10%/20%, second/third/fourth 20%",-,-,%,7
+2011-2022 (Even Years),Multidimensional poverty headcount ratio (World Bank) (% of population),-,-,%,1
+2011-2017,"School enrollment, tertiary, general/female/male (% gross)",-,-,%,3
+2011-2017,"School enrollment, tertiary (gross), gender parity index (GPI)",-,-,ratio,1
+2011-2018,"Over-age students, primary, general (% of enrollment)",-,-,%,1
+2011-2018,"Pupil-teacher ratio (preprimary, primary, lower secondary)",-,-,ratio,3
+2011-2018,"Repeaters, primary, total (% of total enrollment)",-,-,%,1
+2011-2018,"Secondary education, general pupils",-,-,num,1
+2011-2018,"Secondary education, general pupils (% female)",-,-,%,1
+2011-2018,"Primary education, pupils",-,-,num,1
+2011-2018,"Primary education, pupils (% female)",-,-,%,1
+2011-2021,"School enrollment, preprimary, general/female/male (% gross)",-,-,%,3
+2011-2021,"School enrollment, primary, general/female/male/private (% gross)",-,-,%,4
+2011-2021,Adjusted net national income + per capita (constant 2015 US$),-,-,constant 2015 US$,2
+2011-2021,Adjusted net national income (annual % growth),-,-,%,1
+2011-2021,"Adjusted net savings, including/excluding particulate emission damage (% of GNI)",-,-,%,2
+2011-2022,"Government expenditure on education, total (% of GDP/government expenditure)",-,-,%,2
+2011-2023,"Educational attainment, at least completed primary/short-cycle tertiary/upper secondary, population 25+ years, female/male/total (%) (cumulative)",1,Interpolation,%,9
+2011-2024,"Compulsory education, duration",-,-,years,1
+2011-2024,"GDP, GNI (annual % growth)",-,-,%,2
+2011-2024,"GDP, GNI + GDP, GNI per capita(constant 2015 US$)",-,-,constant 2015 US$,4
+2013-2018,"Repeaters, primary, female/male (% of enrollment)",-,-,%,2
+2013-2024,"Primary education, pupils, teachers",-,-,num,2
+2014-2018,"Over-age students, primary, female/male (% of enrollment)",-,-,%,2
+2014-2023,"Adolescents out of school, general/female/male (% of lower secondary school age) ",-,-,%,3
+2014-2024,"Trained teachers in lower secondary/preprimary/primary education, general/male/female (% of teachers)",6,Omission,%,9
+2014-2024,"Children out of school, primary",-,-,num,1
+2014-2024,Children out of school (% of primary school age),-,-,%,1
+2015-2022,"School enrollment, secondary, female/male (% gross)",-,-,%,2
+2019-2023,"Educational attainment, at least completed lower secondary/Master's/Bachelor's/Doctoral or equivalent, population 25+ years, female/male/total (%) (cumulative)",-,-,%,12
+,,,,Total num of variables:,92

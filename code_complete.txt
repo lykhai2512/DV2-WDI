@@ -1,0 +1,541 @@
+# Import Required Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="whitegrid")
+plt.rcParams['figure.figsize'] = (10, 6)
+
+# ==============================================================================
+# DATA LOADING AND CONSOLIDATION
+# ==============================================================================
+
+subfolder = "data/"
+
+raw_filenames = [
+    "2011-2017.csv", "2011-2018.csv", "2011-2021.csv", 
+    "2011-2022-even.csv", "2011-2022.csv", "2011-2023.csv", 
+    "2011-2024.csv", "2013-2018.csv", "2013-2024.csv", 
+    "2014-2018.csv", "2014-2023.csv", "2014-2024.csv", 
+    "2015-2022.csv", "2019-2023.csv"
+]
+
+file_list_with_path = [subfolder + f for f in raw_filenames]
+
+class VietnamDataBody:
+    """
+    Consolidates multiple CSV files representing World Bank indicators
+    into a single unified DataFrame indexed by indicator name.
+    """
+    def __init__(self, file_paths):
+        self.file_paths = file_paths
+        self.full_df = pd.DataFrame()
+        self.data_map = {}
+        self._build_data_body()
+
+    def _build_data_body(self):
+        """Load, clean, and consolidate all CSV files."""
+        all_frames = []
+        for path in self.file_paths:
+            try:
+                df = pd.read_csv(path, skipfooter=5, engine='python')
+                
+                # Clean column names by removing unit indicators
+                df.columns = [c.split(' [')[0] if ' [' in c else c for c in df.columns]
+                df = df.drop(columns=['Country Name', 'Country Code', 'Series Code'], errors='ignore')
+                
+                all_frames.append(df)
+            except FileNotFoundError:
+                print(f"Error: Could not find file at {path}. Check your subfolder name.")
+            except Exception as e:
+                print(f"Error processing {path}: {e}")
+
+        if all_frames:
+            combined = pd.concat(all_frames, axis=0, ignore_index=True)
+            self.full_df = combined.groupby('Series Name').first()
+            self.full_df = self.full_df.replace('..', np.nan).apply(pd.to_numeric)
+            self.data_map = self.full_df.to_dict(orient='index')
+
+    def get(self, keyword):
+        """Retrieve indicator data by keyword matching."""
+        matches = [k for k in self.data_map.keys() if keyword.lower() in k.lower()]
+        if not matches: return None
+        return self.data_map[matches[0]] if len(matches) == 1 else {m: self.data_map[m] for m in matches}
+
+# Initialize data body
+data_body = VietnamDataBody(file_list_with_path)
+print("Data loaded successfully. Total indicators:", len(data_body.full_df))
+
+# ==============================================================================
+# METADATA EXTRACTION AND ANALYSIS
+# ==============================================================================
+
+def extract_indicator_metadata(data_body):
+    """Extract statistical metadata for each indicator."""
+    metadata_list = []
+    
+    for indicator_name, row in data_body.full_df.iterrows():
+        valid_values = row.dropna()
+        
+        if not valid_values.empty:
+            years = valid_values.index.astype(int)
+            year_range = f"{years.min()}-{years.max()}"
+            mean_val = np.round(valid_values.mean(), 2)
+            std_val = np.round(valid_values.std(), 2)
+            
+            # Classify data type
+            if "index" in indicator_name.lower() or "ratio" in indicator_name.lower() or "%" in indicator_name:
+                attr_type = "Quantitative (Continuous)"
+            else:
+                attr_type = "Quantitative (Discrete/Count)"
+            
+            dtype = "Real Value"
+        else:
+            year_range = "N/A"
+            mean_val = "N/A"
+            std_val = "N/A"
+            attr_type = "N/A"
+            dtype = "N/A"
+
+        metadata_list.append({
+            "Data Name": indicator_name,
+            "Data Type": dtype,
+            "Attribute": attr_type,
+            "Year Range": year_range,
+            "Mean": mean_val,
+            "Std Dev": std_val
+        })
+
+    return pd.DataFrame(metadata_list)
+
+summary_table = extract_indicator_metadata(data_body)
+print(summary_table.head(10))
+
+# ==============================================================================
+# METADATA EXTRACTOR FROM METADATA FILES
+# ==============================================================================
+
+metadata_files = [subfolder + f.replace(".csv", "-meta.csv") for f in raw_filenames]
+
+class VietnamMetadataExtractor:
+    """Extract indicator definitions from World Bank metadata files."""
+    def __init__(self, metadata_paths):
+        self.metadata_paths = metadata_paths
+        self.descriptions = {}
+        self._extract_all_metadata()
+
+    def _extract_all_metadata(self):
+        """Iterates through meta files to find Indicator Name and Long Definition."""
+        for path in self.metadata_paths:
+            try:
+                start_line = -1
+                with open(path, 'r', encoding='utf-8') as f:
+                    for i, line in enumerate(f):
+                        if "Indicator Name,Long definition" in line or "Code,License Type" in line:
+                            start_line = i
+                            break
+                
+                if start_line != -1:
+                    meta_df = pd.read_csv(path, skiprows=start_line)
+                    for _, row in meta_df.iterrows():
+                        name = str(row['Indicator Name']).strip()
+                        defn = str(row['Long definition']).strip()
+                        if name and defn:
+                            self.descriptions[name] = defn
+            except Exception as e:
+                continue
+
+    def get_description(self, indicator_name):
+        """Retrieve description for a specific indicator."""
+        return self.descriptions.get(indicator_name, "Description not found in metadata files.")
+
+# Initialize metadata extractor
+meta_extractor = VietnamMetadataExtractor(metadata_files)
+
+def extract_comprehensive_summary(data_body, meta_extractor):
+    """Generate comprehensive summary with descriptions and statistics."""
+    combined_list = []
+    
+    for indicator_name, row in data_body.full_df.iterrows():
+        valid_values = row.dropna()
+        
+        if not valid_values.empty:
+            years = valid_values.index.astype(int)
+            year_range = f"{years.min()}-{years.max()}"
+            mean_val = np.round(valid_values.mean(), 2)
+            std_val = np.round(valid_values.std(), 2)
+            
+            # Logic to classify data type
+            low_name = indicator_name.lower()
+            if any(x in low_name for x in ["index", "ratio", "%", "growth", "per capita"]):
+                attr_type = "Quantitative (Continuous)"
+            else:
+                attr_type = "Quantitative (Discrete)"
+            
+            # Fetch description from metadata
+            description = meta_extractor.get_description(indicator_name)
+            
+            combined_list.append({
+                "Data Name": indicator_name,
+                "Description": description,
+                "Data Type": "Real Value",
+                "Attribute": attr_type,
+                "Year Range": year_range,
+                "Mean": mean_val,
+                "Std Dev": std_val
+            })
+
+    return pd.DataFrame(combined_list)
+
+final_summary = extract_comprehensive_summary(data_body, meta_extractor)
+print(f"Extracted info for {len(final_summary)} indicators.")
+
+# ==============================================================================
+# HANDLE MISSING DATA - INTERPOLATION
+# ==============================================================================
+
+# Target: Educational attainment female, missing 2018
+target_female = "Educational attainment, at least completed primary, population 25+ years, female (%) (cumulative)"
+
+print("--- Data Before Interpolation (2018 is NaN) ---")
+print(data_body.full_df.loc[[target_female], ["2016", "2017", "2018", "2019"]])
+
+# Apply linear interpolation to fill 2018
+data_body.full_df.loc[target_female] = data_body.full_df.loc[target_female].interpolate(method='linear')
+
+print("\n--- Data After Interpolation (2018 Filled) ---")
+print(data_body.full_df.loc[[target_female], ["2016", "2017", "2018", "2019"]])
+
+# ==============================================================================
+# HANDLE MISSING DATA - OMISSION
+# ==============================================================================
+
+teacher_indicators = [
+    "Trained teachers in preprimary education, female (% of female teachers)",
+    "Trained teachers in preprimary education, male (% of male teachers)",
+    "Trained teachers in primary education, female (% of female teachers)",
+    "Trained teachers in primary education, male (% of male teachers)"
+]
+
+gap_years = ["2016", "2017"]
+
+# Remove gap years for teacher data (omission strategy)
+cleaned_teacher_data = data_body.full_df.loc[teacher_indicators].drop(columns=gap_years)
+
+print("--- Data Summary after Omission (2016-2017) ---")
+print(f"Columns remaining: {list(cleaned_teacher_data.columns)}")
+print("\nSample of Omitted Output:")
+print(cleaned_teacher_data[["2015", "2018"]])
+
+# ==============================================================================
+# VISUALIZATION FUNCTIONS - 12 ANALYTICAL PLOTS
+# ==============================================================================
+
+# Q1: Economic Trajectory: GDP vs GNI Growth
+# Range: 2011-2024
+# Data: GDP growth (annual %), GNI growth (annual %)
+# Chart Type: Line Chart
+def plot_q1(data_body):
+    years = [str(y) for y in range(2011, 2025)]
+    gdp_growth = data_body.full_df.loc["GDP growth (annual %)", years].astype(float)
+    gni_growth = data_body.full_df.loc["GNI growth (annual %)", years].astype(float)
+    
+    plt.figure(figsize=(12, 6))
+    plt.plot(years, gdp_growth, marker='o', markersize=6, color='#1f77b4', 
+             linewidth=2, label='GDP Growth (%)')
+    plt.plot(years, gni_growth, marker='s', markersize=6, color='#d62728', 
+             linewidth=2, linestyle='--', label='GNI Growth (%)')
+    
+    plt.title("Q1: GDP vs. GNI Annual Growth Trajectory (2011-2024)", fontsize=14)
+    plt.ylabel("Annual Growth Rate (%)", fontsize=12)
+    plt.xlabel("Year", fontsize=12)
+    
+    plt.axhline(0, color='black', linewidth=0.8, alpha=0.5)
+    
+    plt.xticks(rotation=45)
+    plt.legend(frameon=True, shadow=True)
+    plt.grid(True, linestyle=':', alpha=0.7)
+    
+    plt.tight_layout()
+    plt.show()
+
+# Q2: Wealth-Education Correlation
+# Range: 2019-2023
+# Data: GDP per capita (constant 2015 US$), Bachelor's degree attainment (%)
+# Chart Type: Scatter Plot with Linear Regression Line and Residuals
+def plot_q2(data_body):
+    years = [str(y) for y in range(2019, 2024)]
+    gdp_key = "GDP per capita (constant 2015 US$)"
+    bach_key = [i for i in data_body.full_df.index if "Bachelor's" in i and "total" in i][0]
+
+    x = data_body.full_df.loc[gdp_key, years].values.astype(float)
+    y = data_body.full_df.loc[bach_key, years].values.astype(float)
+    
+    m, c = np.polyfit(x, y, 1)
+    y_pred = m * x + c
+    
+    plt.figure(figsize=(10, 6))
+    
+    for i in range(len(x)):
+        plt.plot([x[i], x[i]], [y[i], y_pred[i]], color='gray', linestyle='--', alpha=0.6, zorder=1)
+
+    plt.plot(x, y_pred, color='red', linewidth=2, label=f'Regression (y={m:.4f}x + {c:.2f})', zorder=2)
+    plt.scatter(x, y, color='#1f77b4', s=120, edgecolors='white', label='Data', zorder=3)
+    
+    plt.title("Q2: Wealth vs. Bachelor's Attainment (2019-2023)\nRegression with Residual Lines")
+    plt.xlabel("GDP per Capita (Constant 2015 US$)")
+    plt.ylabel("Bachelor's Attainment (%)")
+    plt.legend()
+    plt.show()
+
+def print_regression_q2(data_body):
+    """Output regression equation for Q2."""
+    years = [str(y) for y in range(2019, 2024)]
+    gdp_key = "GDP per capita (constant 2015 US$)"
+    bach_key = [i for i in data_body.full_df.index if "Bachelor's" in i and "total" in i][0]
+
+    x = data_body.full_df.loc[gdp_key, years].values.astype(float)
+    y = data_body.full_df.loc[bach_key, years].values.astype(float)
+    
+    m, c = np.polyfit(x, y, 1)
+    print(f"Q2 Regression Equation: y = {m:.4f}x + {c:.2f}")
+
+# Q3: Income Inequality Mapping
+# Range: 2012-2022 (Even Years Only)
+# Data: Income share held by highest 20%, Income share held by lowest 20%
+# Chart Type: Stacked Area Chart
+def plot_q3(data_body):
+    even_years = [str(y) for y in range(2012, 2023, 2)]
+    high_20 = data_body.full_df.loc["Income share held by highest 20%", even_years].values.astype(float)
+    low_20 = data_body.full_df.loc["Income share held by lowest 20%", even_years].values.astype(float)
+    
+    plt.figure()
+    plt.fill_between(even_years, high_20, label='Highest 20% Share', color='#ff7f0e', alpha=0.4)
+    plt.fill_between(even_years, low_20, label='Lowest 20% Share', color='#2ca02c', alpha=0.7)
+    plt.title("Income Inequality Distribution (Even Years: 2012-2022)")
+    plt.ylabel("Percentage of Total National Income")
+    plt.legend(loc='center right')
+    plt.show()
+
+# Q4: Educational Resource Allocation
+# Range: 2011-2022 (Sample Years: 2011, 2014, 2017, 2020, 2022)
+# Data: Government expenditure on education (% of GDP), Government expenditure on education (% of government expenditure)
+# Chart Type: Grouped Bar Chart
+def plot_q4(data_body):
+    years_sample = ["2011", "2014", "2017", "2020", "2022"]
+    edu_gdp = data_body.full_df.loc["Government expenditure on education, total (% of GDP)", years_sample].values.astype(float)
+    edu_gov = data_body.full_df.loc["Government expenditure on education, total (% of government expenditure)", years_sample].values.astype(float)
+    
+    x = np.arange(len(years_sample))
+    width = 0.35
+    
+    fig, ax = plt.subplots()
+    ax.bar(x - width/2, edu_gdp, width, label='% of GDP', color='#1f77b4')
+    ax.bar(x + width/2, edu_gov, width, label='% of Total Gov Exp', color='#aec7e8')
+    
+    ax.set_ylabel('Percentage (%)')
+    ax.set_title('Education Expenditure Allocation (2011-2022)')
+    ax.set_xticks(x)
+    ax.set_xticklabels(years_sample)
+    ax.legend()
+    plt.show()
+
+# Q5: Gender Parity in Out-of-School Adolescents
+# Range: 2014-2023
+# Data: Adolescents out of school by gender (female %, male %)
+# Chart Type: Stacked Bar Chart
+def plot_q5(data_body):
+    years = [str(y) for y in range(2014, 2024)]
+    
+    f_label = [i for i in data_body.full_df.index if "Adolescents out of school, female" in i][0]
+    m_label = [i for i in data_body.full_df.index if "Adolescents out of school, male" in i][0]
+
+    female = data_body.full_df.loc[f_label, years].astype(float)
+    male = data_body.full_df.loc[m_label, years].astype(float)
+    
+    plt.figure()
+    plt.bar(years, female, label='Female', color='#e377c2')
+    plt.bar(years, male, bottom=female, label='Male', color='#1f77b4')
+    plt.title(f"Q5: Out-of-School Adolescents by Gender")
+    plt.ylabel("Percentage (%)")
+    plt.legend()
+    plt.xticks(rotation=45)
+    plt.show()
+
+# Q6: Teacher Qualification Standards
+# Range: 2014-2024 (Note: 2016-2017 are Omitted as per missing data plan)
+# Data: Trained teachers in preprimary education (female %), Trained teachers in primary education (female %)
+# Chart Type: Box Plot (Distribution Comparison)
+def plot_q6(data_body):
+    valid_years = ["2014", "2015", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]
+    
+    pre_key = [i for i in data_body.full_df.index if "Trained teachers in preprimary education, female" in i][0]
+    pri_key = [i for i in data_body.full_df.index if "Trained teachers in primary education, female" in i][0]
+    
+    preprimary = data_body.full_df.loc[pre_key, valid_years].astype(float)
+    primary = data_body.full_df.loc[pri_key, valid_years].astype(float)
+    
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(data=[preprimary, primary], palette="Set2", width=0.5)
+    plt.ylim(80, 100.5)
+    
+    plt.xticks([0, 1], ['Preprimary', 'Primary'])
+    plt.title("Q6: Variance in Female Teacher Training Levels (2014-2024)")
+    plt.ylabel("Trained Teachers (%)")
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.show()
+
+# Q7: Efficiency of Primary Education
+# Range: 2011-2018
+# Data: Pupil-teacher ratio (primary), Repeaters in primary education (% of total enrollment)
+# Chart Type: Scatter Plot with Trajectory Arrows (Time-Series Path)
+def plot_q7(data_body):
+    years = [str(y) for y in range(2011, 2019)]
+    ratio = data_body.full_df.loc["Pupil-teacher ratio, primary", years].astype(float)
+    repeaters = data_body.full_df.loc["Repeaters, primary, total (% of total enrollment)", years].astype(float)
+    
+    plt.figure(figsize=(11, 7))
+
+    for i in range(len(years) - 1):
+        style = '-' if years[i] == "2016" else '->'
+        plt.annotate('', xy=(ratio.iloc[i+1], repeaters.iloc[i+1]), 
+                     xytext=(ratio.iloc[i], repeaters.iloc[i]),
+                     arrowprops=dict(arrowstyle=style, color='royalblue', lw=1.5, alpha=0.7))
+    
+    plt.scatter(ratio, repeaters, c=range(len(years)), cmap='viridis', s=120, edgecolors='white', zorder=3)
+    
+    for i, year in enumerate(years):
+        if year == "2016":
+            plt.text(ratio.iloc[i] - 0.02, repeaters.iloc[i] - 0.02, year, 
+                     fontsize=9, fontweight='bold', ha='right')
+        else:
+            plt.text(ratio.iloc[i] + 0.02, repeaters.iloc[i] + 0.01, year, 
+                     fontsize=9, fontweight='bold')
+
+    plt.title("Q7: Primary Education Efficiency Trajectory (2011-2018)")
+    plt.xlabel("Pupil-Teacher Ratio (Primary)")
+    plt.ylabel("Repeaters (%)")
+    plt.grid(True, linestyle=':', alpha=0.6)
+    plt.show()
+
+# Q8: Poverty Threshold Analysis
+# Range: 2012-2022 (Even Years)
+# Data: Poverty headcount ratio at $3.00/day (2021 PPP), Poverty headcount ratio at $8.30/day (2021 PPP)
+# Chart Type: Step Line Chart
+def plot_q8(data_body):
+    even_years = [str(y) for y in range(2012, 2023, 2)]
+    p3 = data_body.full_df.loc["Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)", even_years].astype(float)
+    p8 = data_body.full_df.loc["Poverty headcount ratio at $8.30 a day (2021 PPP) (% of population)", even_years].astype(float)
+    
+    plt.figure()
+    plt.step(even_years, p3, where='mid', label='$3.00/day', marker='o')
+    plt.step(even_years, p8, where='mid', label='$8.30/day', marker='s')
+    plt.title("Q8: Poverty Headcount Trends by Threshold")
+    plt.ylabel("Headcount Ratio (%)")
+    plt.legend()
+    plt.show()
+
+# Q9: High-Level Attainment Composition
+# Range: 2023 (Latest Snapshot)
+# Data: Master's degree attainment (%), Doctoral degree attainment (%) - Population 25+ years
+# Chart Type: Pie Chart
+def plot_q9(data_body):
+    indicators = [
+        "Educational attainment, at least Master's or equivalent, population 25+, total (%) (cumulative)",
+        "Educational attainment, Doctoral or equivalent, population 25+, total (%) (cumulative)"
+    ]
+    values = data_body.full_df.loc[indicators, "2023"].astype(float)
+    
+    plt.figure()
+    plt.pie(values, labels=["Master's", "Doctoral"], autopct='%1.1f%%', colors=['#66b3ff','#99ff99'], startangle=140)
+    plt.title("Q9: Composition of Postgraduate Attainment (2023)")
+    plt.show()
+
+# Q10: Savings and Environmental Cost
+# Range: 2011-2021
+# Data: Adjusted net savings excluding particulate emission damage (% of GNI), Adjusted net savings including particulate emission damage (% of GNI)
+# Chart Type: Stacked Area Chart
+def plot_q10(data_body):
+    years = [str(y) for y in range(2011, 2022)]
+    
+    excl_key = "Adjusted net savings, excluding particulate emission damage (% of GNI)"
+    incl_key = "Adjusted net savings, including particulate emission damage (% of GNI)"
+    
+    excl = data_body.full_df.loc[excl_key, years].astype(float)
+    incl = data_body.full_df.loc[incl_key, years].astype(float)
+    damage = excl - incl
+    
+    plt.figure(figsize=(10, 6))
+    plt.stackplot(years, incl, damage, 
+                  labels=['Net Savings (Including Damage)', 'Particulate Emission Damage'], 
+                  colors=['#2ca02c', '#d62728'], alpha=0.6)
+    
+    plt.ylim(15, max(excl) + 1)
+    plt.title("Q10: Impact of Particulate Emission Damage on Adjusted Net Savings")
+    plt.ylabel("% of GNI")
+    plt.xlabel("Year")
+    plt.legend(loc='lower right')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+    
+    avg_damage = damage.mean()
+    print(f"Average GNI lost to Particulate Emission Damage (2011-2021): {avg_damage:.3f}%")
+
+# Q11: Early Childhood Education Momentum
+# Range: 2011-2021
+# Data: School enrollment in preprimary education (% gross), Adjusted net national income (constant 2015 US$)
+# Chart Type: Dual-Axis Line Chart (Correlation of growth trends)
+def plot_q11(data_body):
+    years = [str(y) for y in range(2011, 2022)]
+    enrollment = data_body.full_df.loc["School enrollment, preprimary (% gross)", years].astype(float)
+    income = data_body.full_df.loc["Adjusted net national income (constant 2015 US$)", years].astype(float)
+    
+    fig, ax1 = plt.subplots()
+    ax1.plot(years, enrollment, color='green', marker='o', label='Preprimary Enrollment')
+    ax1.set_ylabel('Enrollment (%)', color='green')
+    
+    ax2 = ax1.twinx()
+    ax2.plot(years, income, color='blue', linestyle='--', label='Net National Income')
+    ax2.set_yscale('log')
+    ax2.set_ylabel('Income (Log Scale)', color='blue')
+    
+    plt.title("Q11: Preprimary Enrollment vs. National Income")
+    plt.show()
+
+# Q12: Multidimensional vs. Monetary Poverty
+# Range: 2012-2022 (Even Years)
+# Data: Multidimensional poverty headcount ratio (%), Poverty headcount ratio at $3.00/day (2021 PPP) (%)
+# Chart Type: Multi-Series Line Chart
+def plot_q12(data_body):
+    even_years = [str(y) for y in range(2012, 2023, 2)]
+    multi = data_body.full_df.loc["Multidimensional poverty headcount ratio (World Bank) (% of population)", even_years].astype(float)
+    monetary = data_body.full_df.loc["Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)", even_years].astype(float)
+    
+    plt.figure()
+    plt.plot(even_years, multi, label='Multidimensional', marker='h', color='purple')
+    plt.plot(even_years, monetary, label='Monetary ($3.00/day)', marker='D', color='orange')
+    plt.title("Q12: Multidimensional vs. Monetary Poverty Headcount")
+    plt.ylabel("Percentage (%)")
+    plt.legend()
+    plt.show()
+
+# ==============================================================================
+# EXECUTION OF PLOT FUNCTIONS
+# ==============================================================================
+
+# To execute the plots, call:
+# plot_q1(data_body)
+# plot_q2(data_body)
+# plot_q3(data_body)
+# plot_q4(data_body)
+# plot_q5(data_body)
+# plot_q6(data_body)
+# plot_q7(data_body)
+# plot_q8(data_body)
+# plot_q9(data_body)
+# plot_q10(data_body)
+# plot_q11(data_body)
+# plot_q12(data_body)
